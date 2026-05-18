@@ -48,28 +48,42 @@
 | ウイルス | 病毒 | virus |  |
 | ワーム | 蠕蟲 | worm |  |
 | トロイの木馬 | 木馬程式 | Trojan horse |  |
+| バックドア | 後門 | backdoor | 攻擊者預先留下的非正規遠端進入管道 |
 | ランサムウェア | 勒索軟體 | ransomware |  |
+| クリプトジャッキング | 挖礦劫持 | cryptojacking | 未經授權使用他人運算資源挖掘加密貨幣 |
 | スパイウェア | 間諜軟體 | spyware |  |
+| アドウェア | 廣告軟體 | adware | 強制顯示廣告的惡意程式 |
+| キーロガー | 鍵盤側錄程式 | keylogger | 記錄鍵盤輸入以竊取密碼等資訊 |
 | ボット | 殭屍程式 | bot |  |
 | ボットネット | 殭屍網路 | botnet |  |
 | フィッシング | 網路釣魚 | phishing |  |
+| スピアフィッシング | 魚叉式網路釣魚 | spear phishing | 針對特定對象精心製作的釣魚郵件 |
+| スミッシング | 簡訊釣魚 | smishing | SMS 版的網路釣魚 |
+| ビジネスメール詐欺 | 商務電子郵件詐騙 | business email compromise | BEC；偽裝成經營層或交易對象要求匯款 |
 | 標的型攻撃 | 鎖定式攻擊 | targeted attack |  |
 | 水飲み場型攻撃 | 水坑式攻擊 | watering hole attack |  |
 | ブルートフォース攻撃 | 暴力破解攻擊 | brute-force attack |  |
 | 辞書攻撃 | 字典攻擊 | dictionary attack |  |
 | パスワードリスト攻撃 | 密碼清單攻擊 | password list attack |  |
 | SQLインジェクション | SQL 注入攻擊 | SQL injection |  |
+| OSコマンドインジェクション | OS 命令注入 | OS command injection | 透過輸入欄位注入並執行 OS 命令 |
 | クロスサイトスクリプティング | 跨站腳本攻擊 | cross-site scripting | XSS |
 | クロスサイトリクエストフォージェリ | 跨站請求偽造 | cross-site request forgery | CSRF |
 | セッションハイジャック | 工作階段劫持 | session hijacking |  |
+| クリックジャッキング | 點擊劫持 | clickjacking | 誘騙用戶點擊隱藏於頁面上的透明惡意元素 |
 | ディレクトリトラバーサル | 目錄穿越 | directory traversal |  |
 | バッファオーバーフロー | 緩衝區溢位 | buffer overflow |  |
 | DoS攻撃 | 阻斷服務攻擊 | denial-of-service attack |  |
 | DDoS攻撃 | 分散式阻斷服務攻擊 | distributed denial-of-service attack |  |
+| 踏み台攻撃 | 跳板攻擊 | stepping stone attack | 利用第三方主機進行攻擊，隱藏真實來源 |
 | ゼロデイ攻撃 | 零日攻擊 | zero-day attack |  |
 | 中間者攻撃 | 中間人攻擊 | man-in-the-middle attack |  |
+| リプレイ攻撃 | 重放攻擊 | replay attack | 截取合法通訊封包後重複送出 |
+| DNSキャッシュポイズニング | DNS 快取中毒 | DNS cache poisoning | 偽造 DNS 回應，將用戶導向惡意站台 |
 | サイドチャネル攻撃 | 側通道攻擊 | side-channel attack |  |
 | ソーシャルエンジニアリング | 社交工程 | social engineering |  |
+| 共連れ | 尾隨入侵 | tailgating | 跟隨合法人員進入門禁區域，SG 實體安全高頻 |
+| ショルダーハッキング | 肩窺攻擊 | shoulder surfing | 從旁偷看螢幕或鍵盤輸入 |
 
 ## 3. 認證、加密、存取控制
 
@@ -106,6 +120,13 @@
 | ハイブリッド暗号方式 | 混合加密方式 | hybrid encryption | 公開鍵で共通鍵を配送し、共通鍵で本文を暗号化 |
 | CRL | 憑證廢止清單 | certificate revocation list | 已撤銷憑證的清單 |
 | OCSP | 線上憑證狀態協定 | online certificate status protocol | 即時查詢憑證有效狀態 |
+| MIME | MIME | multipurpose internet mail extensions | Email 格式基礎，支援附件與多媒體內容 |
+| S/MIME | S/MIME | secure/multipurpose internet mail extensions | FE/SG 最常考的 Email 加密與數位簽章標準 |
+| PGP | PGP | pretty good privacy | Email 加密的另一主流方案 |
+| OpenPGP | OpenPGP | OpenPGP | PGP 的開放標準版本（RFC 4880） |
+| タイムスタンプ | 時間戳記 | timestamp | 證明數位文件在特定時間點存在且未被竄改 |
+| RADIUS | RADIUS | remote authentication dial-in user service | 集中管理認證的協定，常搭配 IEEE 802.1X 使用 |
+| LDAP | LDAP | lightweight directory access protocol | 輕量目錄存取協定，帳號與目錄資訊管理基礎 |
 
 ## 4. 網路與通訊
 
@@ -133,6 +154,9 @@
 | VPN | 虛擬私人網路 | virtual private network |  |
 | 無線LAN | 無線區域網路 | wireless LAN |  |
 | SSID | SSID | service set identifier |  |
+| WPA2 | WPA2 | Wi-Fi protected access 2 | 現行主流無線 LAN 加密標準，使用 AES |
+| WPA3 | WPA3 | Wi-Fi protected access 3 | WPA2 的後繼，強化防暴力破解 |
+| IEEE 802.1X | IEEE 802.1X | IEEE 802.1X | 有線／無線 LAN 的連接埠基礎認證標準，常搭配 RADIUS |
 | パケット | 封包 | packet |  |
 | フレーム | 訊框 | frame |  |
 | セグメント | 區段 | segment |  |
@@ -204,6 +228,25 @@
 | 更新 | 更新 | update |  |
 | 挿入 | 新增 | insert |  |
 | 削除 | 刪除 | delete |  |
+| 内部結合 | 內部連接 | INNER JOIN | 只取兩表都匹配的列 |
+| 外部結合 | 外部連接 | OUTER JOIN | 保留一側未匹配的列 |
+| 左外部結合 | 左外部連接 | LEFT OUTER JOIN | 保留左表全部列 |
+| 右外部結合 | 右外部連接 | RIGHT OUTER JOIN | 保留右表全部列 |
+| 直積 | 笛卡兒積 | CROSS JOIN | 兩表所有列的組合，無連接條件 |
+| 副問合せ | 子查詢 | subquery | SELECT 內嵌另一個 SELECT |
+| 相関副問合せ | 相關子查詢 | correlated subquery | 子查詢參照外層查詢的列 |
+| UNION | 聯集 | UNION | 合併結果集並去除重複列 |
+| UNION ALL | 聯集（含重複） | UNION ALL | 合併結果集並保留重複列 |
+| INTERSECT | 交集 | INTERSECT | 取兩查詢共同的列 |
+| EXCEPT | 差集 | EXCEPT / MINUS | 取左查詢中不在右查詢的列 |
+| GROUP BY | 群組化 | GROUP BY | 依指定欄位分組 |
+| HAVING | 群組條件 | HAVING | 對 GROUP BY 結果進行過濾 |
+| ORDER BY | 排序 | ORDER BY | 指定結果集的排序順序 |
+| ACID特性 | ACID 特性 | ACID properties | トランザクションが保証する4つの特性 |
+| 原子性 | 原子性 | atomicity | 交易全部成功或全部失敗，不允許部分完成 |
+| 一貫性 | 一致性 | consistency | 交易前後資料庫維持一致狀態 |
+| 独立性 | 隔離性 | isolation | 並行交易互不干擾 |
+| 永続性 | 持久性 | durability | 提交後的結果永久保存，不因故障而消失 |
 
 ## 7. 軟體開發與測試
 
@@ -274,6 +317,10 @@
 | カウンタ変数 | 計數器變數 | counter variable |  |
 | 番兵 | 哨兵值 | sentinel value | 用於標示終止條件的特殊值 |
 | 部分配列 | 子陣列 | subarray |  |
+| ヒープ | 堆積 | heap | 常用於實作優先佇列的樹狀結構 |
+| 優先度付きキュー | 優先佇列 | priority queue | 每次取出優先度最高的元素 |
+| ハッシュテーブル | 雜湊表 | hash table | 以雜湊函數映射鍵值，平均 O(1) 存取 |
+| O記法 | 大O表示法 | Big O notation | 表達演算法時間／空間複雜度的漸進符號 |
 
 ## 9. 專案、服務管理、法務與治理
 
@@ -429,6 +476,11 @@
 | VLAN | 虛擬區域網路 | virtual LAN |  |
 | DMZ | 非軍事區 | demilitarized zone |  |
 | CDN | 內容傳遞網路 | content delivery network |  |
+| 送信ドメイン認証 | 寄件網域認證 | sender domain authentication | SPF / DKIM / DMARC 的統稱，防止寄件人偽造 |
+| SPF | SPF | sender policy framework | 以 DNS TXT 記錄驗證寄件伺服器是否合法 |
+| DKIM | DKIM | domainkeys identified mail | 用數位簽章驗證郵件來源網域 |
+| DMARC | DMARC | domain-based message authentication, reporting and conformance | 結合 SPF/DKIM，指定驗證失敗時的處理政策 |
+| OP25B | OP25B | outbound port 25 blocking | 封鎖外部使用 Port 25 外發信件，防止垃圾信與郵件偽造 |
 
 ## 14. 資料庫延伸與資料分析
 
@@ -437,7 +489,7 @@
 | 実体 | 實體 | entity |  |
 | 属性 | 屬性 | attribute |  |
 | 関連 | 關聯 | relationship |  |
-| ER図 | ER 圖 | entity relationship diagram |  |
+| ER図 | 實體關係圖 | entity relationship diagram |  |
 | 関数従属性 | 函數相依 | functional dependency |  |
 | 参照整合性 | 參照完整性 | referential integrity |  |
 | 共有ロック | 共享鎖 | shared lock |  |
@@ -476,11 +528,7 @@
 | カプセル化 | 封裝 | encapsulation |  |
 | 多態性 | 多型 | polymorphism |  |
 | モジュール | 模組 | module |  |
-| ライブラリ | 函式庫 | library |  |
 | API | API | application programming interface |  |
-| コンパイラ | 編譯器 | compiler |  |
-| インタプリタ | 直譯器 | interpreter |  |
-| リンカ | 連結器 | linker |  |
 | ビルド | 建置 | build |  |
 | デプロイ | 部署 | deploy | 日本現場也會說「リリース」 |
 | リリース | 發布 | release |  |
@@ -544,13 +592,13 @@
 | 限界値分析 | 邊界值分析 | boundary value analysis |  |
 | トップダウンテスト | 由上而下測試 | top-down test |  |
 | ボトムアップテスト | 由下而上測試 | bottom-up test |  |
-| スタブ | Stub | stub |  |
-| ドライバ | Driver | driver | 測試用呼叫端 |
+| スタブ | 虛設常式 | stub | 取代下位模組的測試替身 |
+| ドライバ | 測試用驅動程式 | driver | 取代上位呼叫端的測試用程式 |
 | 品質特性 | 品質特性 | quality characteristic |  |
 | レビュー記録 | 審查紀錄 | review record |  |
 | 仕様書 | 規格書 | specification |  |
 | 設計書 | 設計文件 | design document |  |
-| 手順書 | 操作手冊 | procedure manual |  |
+| 手順書 | 作業手冊 | procedure manual |  |
 | 運用マニュアル | 維運手冊 | operations manual |  |
 | 障害報告書 | 異常報告書 | incident report |  |
 
@@ -574,7 +622,7 @@
 | シャドーIT | 影子 IT | shadow IT |  |
 | BYOD | 自攜裝置 | bring your own device |  |
 | MDM | 行動裝置管理 | mobile device management |  |
-| SOC | 資安監控中心 | security operation center |  |
+| SOC | 資安監控中心 | security operations center |  |
 | CSIRT | 資安事件應變小組 | computer security incident response team |  |
 | SIEM | 安全資訊與事件管理 | security information and event management |  |
 | EDR | 端點偵測與回應 | endpoint detection and response |  |
@@ -633,7 +681,6 @@
 | 商標権 | 商標權 | trademark right |  |
 | 意匠権 | 設計權 | design right |  |
 | ライセンス | 授權 | license |  |
-| オープンソースソフトウェア | 開放原始碼軟體 | open source software | OSS |
 | GPL | GPL | general public license |  |
 | ISO | 國際標準化組織 | international organization for standardization |  |
 | IEC | 國際電工委員會 | international electrotechnical commission |  |
@@ -1072,7 +1119,7 @@
 | DSA | DSA | digital signature algorithm | 數位簽章專用，不用於加密 |
 | ECDSA | ECDSA | elliptic curve digital signature algorithm | 橢圓曲線簽章，RSA 的精簡替代 |
 | SHA-256 | SHA-256 | secure hash algorithm 256 | 現行主流雜湊演算法 |
-| SHA-3 | SHA-3 | secure hash algorithm 3 | SHA-256 的後繼世代 |
+| SHA-3 | SHA-3 | secure hash algorithm 3 | SHA-2 的備選標準，採用 Keccak 架構，兩者目前並行使用 |
 | MD5 | MD5 | message digest 5 | 已廢棄，但試題中仍出現 |
 | HMAC | HMAC | hash-based message authentication code | 以共通鍵 + 雜湊產生 MAC |
 | 共通鍵配送問題 | 共通金鑰配送問題 |  | 對稱式加密的本質課題 |
@@ -1085,9 +1132,8 @@
 |---|---|---|---|
 | DevOps | DevOps | DevOps | 開發與維運融合的文化與實踐 |
 | DevSecOps | DevSecOps | DevSecOps | 在 DevOps 中嵌入安全 |
-| CI | 持續整合 | continuous integration | 頻繁合併並自動測試 |
 | CD | 持續交付／部署 | continuous delivery / deployment | 自動化發布流程 |
-| 継続的インテグレーション | 持續整合 | continuous integration |  |
+| 継続的インテグレーション | 持續整合 | continuous integration | CI；頻繁合併並自動測試 |
 | 継続的デリバリー | 持續交付 | continuous delivery |  |
 | 継続的デプロイメント | 持續部署 | continuous deployment |  |
 | IaC | 基礎設施即程式碼 | infrastructure as code | 以程式碼定義與管理基礎設施 |
